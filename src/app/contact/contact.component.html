@@ -1,0 +1,64 @@
+<div class="contact-us" style="background: black; height: 100vh;">
+
+
+
+    <div class="login-box">
+        <p>Contact</p>
+        <form [formGroup]="contactForm" novalidate>
+            <div class="user-box">
+                <input required="" name="" type="text" [formControl]="name">
+                <label>Name</label>
+                <p class="text-danger" [hidden]="name.untouched || name.valid">This filed is required</p>
+                 
+            </div>
+            <div class="user-box">
+                <input required="" name="" type="text" [formControl]="email">
+                <label>Email</label>
+                <p class="text-danger" [hidden]="email.untouched || email.valid">This filed is required</p>
+            </div>
+            <div class="user-box">
+                <input required="" name="" type="text" [formControl]="message">
+                <label>Message</label>
+                <p class="text-danger" [hidden]="message.untouched || message.valid">This filed is required</p>
+            </div>
+           <button type="button" class="btn btn-dark" [disabled]="!contactForm.valid" (click)="contactSubmit()">Submit</button>
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br> -->
